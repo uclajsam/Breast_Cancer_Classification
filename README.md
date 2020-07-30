@@ -24,3 +24,5 @@ The dataset has 32 variables which are defined below:
 | concave points* | Number of concave points of the contour |
 | symmetry* | Not defined |
 | fractal dimension* | Coastline approximation |
+
+## Reading the Data
