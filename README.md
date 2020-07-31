@@ -35,6 +35,7 @@ Our initial analysis shows that there are no missing values for any of the varia
 <img src = "https://user-images.githubusercontent.com/60159655/88986581-3c766a00-d288-11ea-9add-014eec27dfdc.png" />
 </p>
 
-<p align = "center">
-<img src = "https://user-images.githubusercontent.com/60159655/88987946-57e37400-d28c-11ea-9771-9b225bb494e0.png" />
-</p>
+From our data, approximately 63% of the cells are benign and 37% are malignant.
+
+### Visualizing Feature Variables
+We utilized swarmplots to visualize each feature variable with respect to cancer type to see if there are two distinct groups.  
