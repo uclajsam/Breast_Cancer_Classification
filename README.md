@@ -36,7 +36,5 @@ Our initial analysis shows that there are no missing values for any of the varia
 </p>
 
 <p align = "center">
-<**Percent Malignant - 62.7%**>
+<img src = "https://user-images.githubusercontent.com/60159655/88987946-57e37400-d28c-11ea-9771-9b225bb494e0.png" />
 </p>
-
-**Percent Benign - 37.3%**
