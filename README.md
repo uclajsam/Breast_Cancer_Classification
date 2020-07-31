@@ -32,5 +32,5 @@ The dataset has 32 variables which are defined below:
 Our initial analysis shows that there are no missing values for any of the variables.  We also drop the `id` column because this is a unique identifier for each cell and will not have any bearing with modeling or analysis.  The distribution of the target variable (cell classification) can be seen below:
 
 <p align = "center">
-![Target Countplot](https://user-images.githubusercontent.com/60159655/88986581-3c766a00-d288-11ea-9add-014eec27dfdc.png)
+<img src = "https://user-images.githubusercontent.com/60159655/88986581-3c766a00-d288-11ea-9add-014eec27dfdc.png" />
 </p>
