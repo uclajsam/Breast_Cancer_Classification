@@ -38,7 +38,29 @@ Our initial analysis shows that there are no missing values for any of the varia
 From our data, approximately 63% of the cells are benign and 37% are malignant.
 
 ### Visualizing Feature Variables
-We utilized swarmplots to visualize each feature variable with respect to cancer type to see if we can clearly separate the Maligantn and Benign groups.
+We utilized swarmplots to visualize each feature variable with respect to cancer type to see if we can clearly separate the Maligantn and Benign groups.  To deal with potential outliers, we used the StandardScaler method to define a smaller range of potential values for each variable.  
 
-#### "Mean" Feature Swarmplot
+#### "Mean" Features Swarmplot
 ![Mean Swarmplot](https://user-images.githubusercontent.com/60159655/89219716-2d900000-d585-11ea-80d0-a17688561ca3.png)
+
+#### "Error" Features Swarmplot
+![Error Swarmplot](https://user-images.githubusercontent.com/60159655/89220407-5cf33c80-d586-11ea-95a0-653ab2bf5364.png)
+
+#### "Worst" Features Swarmplot
+![Worst Swarmplot](https://user-images.githubusercontent.com/60159655/89220468-78f6de00-d586-11ea-9c32-af9228d9966e.png)
+
+**Observations:** From these three plots, there are some variables that can be separated in terms of cancer type.  For example, the following variables show swarmplots where the blue and orange dots are clearly separated:
+
+`mean radius`
+`mean area` 
+`mean perimter`
+`mean concavity`
+`radius error`
+`perimeter error`
+`area error`
+`worst radius`
+`worst perimter`
+`worst area`
+`worst concave points`
+
+We can assume that these variables are clearl important in defining whether or not a random cell is classified as malignant or benign.  We will take these values into consideration when creating our classification model below. 
