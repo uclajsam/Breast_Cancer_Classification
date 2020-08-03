@@ -9,6 +9,7 @@ Cancer is a disease that affects millions of people around the world.  Machine l
 - Matplotlib
 - Sklearn
 
+<p align = "center">
 ## Data Dictionary
 The dataset has 32 variables which are defined below:
 | Variable | Description |
@@ -25,6 +26,7 @@ The dataset has 32 variables which are defined below:
 | symmetry* | Not defined |
 | fractal dimension* | Coastline approximation |
 | target | Cell classification: 0 - Malignant, 1 - Benign |
+</p>
 
 * = Variables have 'mean', 'error', and 'worst' classifications (i.e. `mean_radius`, `radius_error`, `worst_radius` for the radius variable)
 
