@@ -9,7 +9,6 @@ Cancer is a disease that affects millions of people around the world.  Machine l
 - Matplotlib
 - Sklearn
 
-<p align = "center">
 ## Data Dictionary
 The dataset has 32 variables which are defined below:
 | Variable | Description |
@@ -26,7 +25,6 @@ The dataset has 32 variables which are defined below:
 | symmetry* | Not defined |
 | fractal dimension* | Coastline approximation |
 | target | Cell classification: 0 - Malignant, 1 - Benign |
-</p>
 
 * = Variables have 'mean', 'error', and 'worst' classifications (i.e. `mean_radius`, `radius_error`, `worst_radius` for the radius variable)
 
@@ -66,3 +64,8 @@ We utilized swarmplots to visualize each feature variable with respect to cancer
 `worst concave points`
 
 We can assume that these variables are clearl important in defining whether or not a random cell is classified as malignant or benign.  We will take these values into consideration when creating our classification model below. 
+
+### Correlation Matrix
+![Breast Cancer Correlation Matrix](https://user-images.githubusercontent.com/60159655/89221759-b0ff2080-d588-11ea-9a37-f55ecc2348dd.png)
+
+
