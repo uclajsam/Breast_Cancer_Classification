@@ -94,3 +94,20 @@ From our test data, our Random Forest Classifier model correctly predicted 217 o
 <p align = "center">
 <img src = "https://user-images.githubusercontent.com/60159655/89253558-d2382f00-d5d1-11ea-9246-90d32db93f3b.png" />
 </p>
+
+### Random Forest Classifier Feature Importances
+When we plot the "feature importances" for this model we determine the top 5 most important features are:
+
+1) worst perimeter
+2) worst concave points
+3) worst area
+4) mean concave points
+5) worst radius
+
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/60159655/89254437-f72da180-d5d3-11ea-8edd-14ecb29d6ca7.png" />
+</p>
+
+The importance of these features is not a surprise since these features are highly correlated with the target variable.  Since our data fits well with our baseline model, we will try to improve our model by selecting the most relevant features while trying to improve accuracy.
+
+## Feature Selection
