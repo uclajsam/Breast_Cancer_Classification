@@ -68,4 +68,7 @@ We can assume that these variables are clearl important in defining whether or n
 ### Correlation Matrix
 ![Breast Cancer Correlation Matrix](https://user-images.githubusercontent.com/60159655/89221759-b0ff2080-d588-11ea-9a37-f55ecc2348dd.png)
 
+From the correlation matrix, we see that there are feature groups that are highly correlated with one another (i.e. `mean_radius`, `mean_perimeter`, `mean_area`).  We need to these relationships into account when creating our model because overfitting could possibly occur.  From the matrix, only 6 out of 30 features show no correlation to the target variable (-0.10 < r < 0.10).
+
+## Modeling
 
