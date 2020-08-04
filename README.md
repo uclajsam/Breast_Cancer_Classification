@@ -110,4 +110,13 @@ When we plot the "feature importances" for this model we determine the top 5 mos
 
 The importance of these features is not a surprise since these features are highly correlated with the target variable.  Since our data fits well with our baseline model, we will try to improve our model by selecting the most relevant features while trying to improve accuracy.
 
-## Feature Selection
+## Simplifying Model Using RFE
+RFE (Recursive Feature Elimination) is an algorithm used to select the most relevant features in a machine learning model.  We will use RFE to determine if we can simplify our original model with 30 features and see if we can get an even better accuracy with less features.  We start by using RFE to determine the best model with one feature, train a Random Forest Classifier model, and predict evaluation metrics on the test data.  We increase the number of features by one and repeat the same process until we have created a model using all of the features.  A graph of metric values is shown below which illustrates that the best accuracy and F1 score is achieved with **_14 features_**
+
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/60159655/89316537-1870ab00-d631-11ea-9e36-7fdad19e8dac.png" />
+</p>
+
+
+## Feature Selection Using Reverse Feature Elimination 
+To improve our baseline model, we will try to remove highly correlated and redundant features from the original dataset.  For example, we have features that include the radius, perimeter, and area.  However, these quantities are directly related to one another.  The perimeter of a circle is directly proportional to the radius and the area of a circle is directly proprotational to the radius^2.  Incorporating all three features might be redundant, so we will only choose the area to include in the improved model.  Intuitively, we will keep 'area' attributes and drop 'perimeter' and 'radius' attributes.  In addition, the attribute groups containing 'concavity', 'compactness', and 'concave points' are highly correlated.  We will keep one of the three from this group (concave points).  Therefore, the following attributes 
