@@ -87,3 +87,10 @@ Below is a table of our baseline results:
 <img src = "https://user-images.githubusercontent.com/60159655/89239959-98eec780-d5af-11ea-9b5c-21a6f476dd40.png" />
 </p>
 
+**Observation:** From the table, it seems like the data fits well for several classification models.  Out of models tested, the Random Forest Classifier has the highest metrics across the board.  We will choose this model for furuther analysis, although other models works just as well for this dataset.
+
+### Baseline Random Forest Confusion Matrix (Test Accuracy = 95.2%)
+From our test data, our Random Forest Classifier model correctly predicted 217 out of 228 values.  
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/60159655/89253558-d2382f00-d5d1-11ea-9246-90d32db93f3b.png" />
+</p>
