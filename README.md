@@ -138,3 +138,32 @@ Using RFE in the manner above, we determine that from this subset of features, t
 <img src = "https://user-images.githubusercontent.com/60159655/89320103-e6ae1300-d635-11ea-8cca-ca25e4bc351a.png" />
 </p>
 
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/60159655/89321053-448f2a80-d637-11ea-84ac-8c9a3f237ccd.png" />
+</p>
+
+For the model with 11 features, RFE chose the following attributes:
+
+`mean_texture`, `mean_area`, `mean_concave_points`, `area_error`, `concave_points_error`, `worst_texture`, `worst_area`, `worst_smoothness`, `worst_concave_points`, `worst_symmetry`, `worst_fractal_dimension`
+
+### Correlation Matrix for 11-Feature RFE Model
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/60159655/89324069-84f0a780-d63b-11ea-967e-a6c0de662884.png" />
+</p>
+
+**Observation:** Although there is still high correlation with some of the features, this groups of features will be less prone to overfitting compared to the 14-feature RFE model defined above.  
+
+## Accuracy and F1 Summary of Random Forest Classifier Models
+| Model | Accuracy | F1 |
+| -------- | -------- | -------- |
+| Baseline Model (30 features) | 0.9518 | 0.9617 |
+| RFE Model (14 features) | 0.9693 | 0.9754 |
+| RFE Model (11 features) | 0.9737 | 0.9790 |
+
+**Observation:**  By using RFE, we were able to achieve slightly beter accuracy and F1 scores from the baseline model.  We increased a 2% increase in accuracy and F1 scores while reducing the number of features in the best model by more than 50% from the original model.
+
+## Conclusion
+This project illustrates (complete)
+
+
+
