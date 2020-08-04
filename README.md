@@ -71,4 +71,19 @@ We can assume that these variables are clearl important in defining whether or n
 From the correlation matrix, we see that there are feature groups that are highly correlated with one another (i.e. `mean_radius`, `mean_perimeter`, `mean_area`).  We need to these relationships into account when creating our model because overfitting could possibly occur.  From the matrix, only 6 out of 30 features show no correlation to the target variable (-0.10 < r < 0.10).
 
 ## Modeling
+For our baseline model, we will train with all of the features and do a 60/40 train-test split on the data.  We allocated a greater percentage for the "test" dataset because we have a small sample size (569 entries).  In addition, we will utilize the following common classification machine learning models with default parameters to achieve a baseline:
+
+1) Logistic Regression
+2) Naive Bayes Classifier
+3) Stochiastic Gradient Descent
+4) K-Neighbors Classifier
+5) Decision Tree Classifier
+6) Random Forest Classifier
+7) Support Vector Classifier
+
+Below is a table of our baseline results:
+
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/60159655/89239959-98eec780-d5af-11ea-9b5c-21a6f476dd40.png" />
+</p>
 
