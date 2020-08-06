@@ -163,7 +163,4 @@ For the model with 11 features, RFE chose the following attributes:
 **Observation:**  By using RFE, we were able to achieve slightly beter accuracy and F1 scores from the baseline model.  We increased a 2% increase in accuracy and F1 scores while reducing the number of features in the best model by more than 50% from the original model.
 
 ## Conclusion
-This project illustrates (complete)
-
-
-
+The goal of this project was to analyze a dataset associated with breast cancer.  Using data analysis and machine learning algorithms, we were able to create a Random Forest Classifier model which could detect the correct classificaiton of a tumor by 98%.  Having a high accuracy is critical in the health care industry because cancer is a life-altering diagnosis.  Having models that correctly predict and classify cancerous cells is critical.  This model can be improved upon by using a larger dataset or even tuning the hyperparameters of the Random Forest Classifier even further. 
